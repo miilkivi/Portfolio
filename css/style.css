@@ -1,0 +1,20 @@
+body{
+	background-image: url("mountain.JPG");
+	margin: 10px;
+}
+#header{
+	max-height: 250px;
+	font-family: 'Fontdiner Swanky', cursive;
+}
+#project-header{
+	font-family: 'Black Ops One', cursive;
+}
+.project {
+    margin: 0 auto;
+}
+#project-header{
+	margin-bottom: 30px;
+}
+.margin-left{
+	margin-left: 14px;
+}

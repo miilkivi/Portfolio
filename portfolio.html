@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link href="css/jquery-ui.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/style.css">
+            <link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky|Black+Ops+One' rel='stylesheet' type='text/css'>
+
+          
+            <style>
+              label {
+                display: inline-block;
+                width: 5em;
+              }
+            </style>
+
+
+      </head>
+      <body>
+            <div class="container">    
+                  <div id="header" class="row 
+                  ">
+                        <div id="profile-picture" class="col-xs-6"><img src="images/profile.jpg" class="img-responsive img-rounded"></div>
+                        <div id="name" class="col-xs-6 text-right">
+                              <h1>Mika Kivi</h1>
+                              <h3>Computer Science Student</h3>
+                        </div>
+                  </div>
+                  <div id="quotes" class="row">     
+                    <img src="" class="img-responsive">
+            </div>
+            <div id="project-header" class="row">
+                <div class="col-xs-12 text-center text-uppercase">
+                    <h1><u>Projects</u></h1>
+                </div>
+            </div>
+            <div id="projects" class="row text-center">
+                <div class="col-xs-6">
+                    <!--<img src="http://placehold.it/555x300" class="img-responsive">-->
+                    <a href="#" title="Click image to get more information"><img src="images/cogfut.png" class="img-responsive project img-rounded" onclick="openModalCogfut();"></a>
+                    <h3 onclick="openModalCogfut();">CogFut</h3>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" title="Click image to get more information"><img src="images/makefile.png" class="img-responsive project img-rounded" onclick="openModalMakefile();"></a>
+                    <h3 onclick="openModalMakefile();">Mafile-Generator</h3>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" title="Click image to get more information"><img src="images/digitalSprayCan.png" class="img-responsive project img-rounded" onclick="openModalSprayCan();"></a>
+                    <h3 onclick="openModalSprayCan();">Digital Spray Can</h3>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" title="Click image to get more information"><img src="images/pipemaster.png" class="img-responsive project img-rounded" onclick="openModalPipemaster();"></a>
+                    <h3 onclick="openModalPipemaster">Pipemaster</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <div class="different-body">...</div>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/jQuery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+          <script>
+              $(function() {
+                $( document ).tooltip();
+              });
+            </script>
+    </body>
+</html>
