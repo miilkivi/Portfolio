@@ -5,9 +5,10 @@
       		<meta charset="UTF-8">
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link href="css/jquery-ui.min.css" rel="stylesheet">
-            <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
             <link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky|Black+Ops+One' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
             <style>
               label {
                 display: inline-block;
@@ -19,7 +20,23 @@
             <div class="container">    
                   <div id="header" class="row 
                   ">
-                        <div id="profile-picture" class="col-xs-6"><img src="images/profile.jpg" class="img-responsive img-rounded"></div>
+                        <div id="profile-picture" class="col-xs-6">
+                        	<div class="col-xs-12">
+                        		<img src="images/profile.jpg" class="img-responsive img-rounded">
+                        	</div>
+                        	<div id="contact-information" class="dropdown col-xs-12">
+  								<button class="btn btn-info dropdown-toggle" type="button" id="contact-info-btn" data-toggle="dropdown" aria-expanded="true">
+    								Contact Information
+    								<span class="caret"></span>
+  								</button>
+  								<ul class="dropdown-menu margin-left" role="menu" aria-labelledby="dropdownMenu1">
+    								<li role="presentation"><a role="menuitem" tabindex="-1" href="mailto:miilkivi@gmail.com">Email<i class="pull-right fa fa-envelope-square"></i></a></li>
+    								<li role="presentation"><a type="link" role="menuitem" tabindex="-1" href='https://www.linkedin.com/in/mikivi' target='_blank'>LinkedIN<i class="pull-right fa fa-linkedin-square"></i></a></li>
+    								<li role="presentation"><a type="link" role="menuitem" tabindex="-1" href='https://www.facebook.com/mika.i.kivi' target='_blank' class="font-facebook">Facebook<i class="pull-right fa fa-facebook-square"></i></a></li>
+    								<li role="presentation"><a type="link" role="menuitem" tabindex="-1" href='https://twitter.com/mi_kivi' target='_blank'>Twitter<i class="pull-right fa fa-twitter-square"></i></a></li>
+  								</ul>
+							</div>
+                        </div>
                         <div id="name" class="col-xs-6 text-right">
                               <h1>Mika Kivi</h1>
                               <h3>Front-end developer<br>Leadership enthusiastic</h3>
@@ -40,7 +57,7 @@
                 </div>
                 <div class="col-xs-6 project-big">
                     <a href="#" title="Click image to get more information"><img src="images/makefile.png" class="img-responsive project img-rounded" onclick="openModalMakefile();"></a>
-                    <h3 onclick="openModalMakefile();">Mafile-Generator</h3>
+                    <h3 onclick="openModalMakefile();">Makefile-Generator</h3>
                 </div>
                 <div class="col-xs-4">
                     <a href="#" title="Click image to get more information"><img src="images/cogfut.png" class="img-responsive project img-rounded" onclick="openModalCogfut();"></a>

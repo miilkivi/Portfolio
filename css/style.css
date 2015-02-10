@@ -12,6 +12,9 @@ html{
 	max-height: 250px;
 	font-family: 'Fontdiner Swanky', cursive;
 }
+#contact-information{
+	font-family: 'Francois One', sans-serif;
+}
 #project-header{
 	font-family: 'Black Ops One', cursive;
 }
@@ -24,8 +27,13 @@ html{
 #projects{
 	margin-bottom: 100px;
 }
+#contact-info-btn{
+	min-width: 160px;
+}
 .margin-left{
 	margin-left: 14px;
+	/*background-color: #d9edf7;*/
+	background-image: url(../images/mountain.png);
 }
 .project-big{
 	margin-bottom: 20px;
@@ -48,4 +56,10 @@ html{
 }
 .footer-text{
 	color: black;
+}
+.dropdown-menu{
+	margin-top: 0px;
+}
+.font-facebook{
+	color: #0066FF;
 }
