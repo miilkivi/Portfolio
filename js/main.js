@@ -22,7 +22,7 @@ function openModalMakefile () {
 	$( ".modal-title" ).remove();
 	$( ".modal-header" ).append( $( "<h4 class='modal-title' id='myModalLabel'>Makefile Generator</h4>" ) );
 	$( ".different-body" ).remove();
-	$( ".modal-body" ).append( $( " <div class='different-body'><p><strong>Course:</strong> Advanced Software Engineering</p><p><strong>School:</strong> Universitat Politecnica de Catalunya</p><p><strong>Grade:</strong> 3/5</p><p><strong>Description:</strong> As systems and services become more pervasive, large-scale and complex, new methods are needed to deal with the complexity of conceiving them, designing them and implementing them. ASE will expose students to software engineering methods that provide them the ability to develop software systems and services in a more efficient and effective way. The presented methods will embrace the full range of software engineering activities, from requirements engineering to software validation, from formal models to practical artifacts, from products to processes. The program of the course will evolve continuously as new methods emerge and others become obsolete.</p><p><strong>Our project:</strong> Project was ment to be focused on research in software engineering. Our orginal plan was try to get developers use more MDD methdologies. We created new prototype of the tool that is ment to be used by developers who work on C projects. Our tool is trying to ask developers first created design of the system and from that design our tool will create makefile and other needed files for the project. Project is only prototype and we did not really come to solution is this really needed but we learn alot about web-technologies and research in software engineering. Under you can find link to our GitHub where our code is hosted.</p><p><strong>Technologies:</strong> Javascript, Html5, CSS, Bootstrap, Jquery, Kinetic.js, Angular.js</p><p><strong>My responsibilities:</strong> Interface design, interface implementation, research and writing the report.</p></div>" ) );
+	$( ".modal-body" ).append( $( " <div class='different-body'><p><strong>Course:</strong> Advanced Software Engineering</p><p><strong>School:</strong> Universitat Politecnica de Catalunya</p><p><strong>Grade:</strong> 8.8/10</p><p><strong>Description:</strong> As systems and services become more pervasive, large-scale and complex, new methods are needed to deal with the complexity of conceiving them, designing them and implementing them. ASE will expose students to software engineering methods that provide them the ability to develop software systems and services in a more efficient and effective way. The presented methods will embrace the full range of software engineering activities, from requirements engineering to software validation, from formal models to practical artifacts, from products to processes. The program of the course will evolve continuously as new methods emerge and others become obsolete.</p><p><strong>Our project:</strong> Project was ment to be focused on research in software engineering. Our orginal plan was try to get developers use more MDD methdologies. We created new prototype of the tool that is ment to be used by developers who work on C projects. Our tool is trying to ask developers first created design of the system and from that design our tool will create makefile and other needed files for the project. Project is only prototype and we did not really come to solution is this really needed but we learn alot about web-technologies and research in software engineering. Under you can find link to our GitHub where our code is hosted.</p><p><strong>Technologies:</strong> Javascript, Html5, CSS, Bootstrap, Jquery, Kinetic.js, Angular.js</p><p><strong>My responsibilities:</strong> Interface design, interface implementation, research and writing the report.</p></div>" ) );
 	$(".modal-footer").empty();
 	$(".modal-footer").append($("<a type='button' class='btn btn-primary' href='https://github.com/tcoatale/Makefile-Generator' target='_blank'>GitHub<i class='margin-left fa fa-github'></i></a>"));
 	$('#myModal').modal('show');
@@ -37,3 +37,30 @@ function openModalCogfut () {
 	$(".modal-footer").append($("<a type='button' class='btn btn-primary' href='http://cogfut.herokuapp.com' target='_blank'>Try it out</a>"));
 	$('#myModal').modal('show');
 }
+
+
+function openModalFuzu () {
+	$( ".modal-title" ).remove();
+	$( ".modal-header" ).append( $( "<h4 class='modal-title' id='myModalLabel'>Fuzu Subscription Page </h4>" ) );
+	$( ".different-body" ).remove();
+	$( ".modal-body" ).append( $( " <div class='different-body'><p><strong>Practice work for job application</strong></p><p><strong>Company:</strong><a href='http://fuzu.fi/' target='_blank'> Fuzu</a></p><p><strong>Description:</strong> I was asked to create web page using framework that I can choose. I was also asked to add some features to buttons and forms. Picture above is the picture that was given to me. You can find result from the link and code from the GitHub.</p><p><strong>Technologies:</strong> HTML5, CSS, Bootstrap, Jquery</p> <img src='images/fuzu.png' class='img-responsive project img-rounded'></div>" ) );
+	$(".modal-footer").empty();
+	$(".modal-footer").append($("<a type='button' class='btn btn-primary' href='https://github.com/miilkivi/Fuzu_project' target='_blank'>GitHub<i class='margin-left fa fa-github'></i></a>"));
+	$('#myModal').modal('show');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

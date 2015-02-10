@@ -1,6 +1,12 @@
 body{
-	background-image: url("mountain.JPG");
+	/*background-image: url("mountain.JPG");*/
+	background-color: #5599D4;
 	margin: 10px;
+	margin-bottom: 60px;
+}
+html{
+	position: relative;
+  	min-height: 100%;
 }
 #header{
 	max-height: 250px;
@@ -15,6 +21,31 @@ body{
 #project-header{
 	margin-bottom: 30px;
 }
+#projects{
+	margin-bottom: 100px;
+}
 .margin-left{
 	margin-left: 14px;
+}
+.project-big{
+	margin-bottom: 20px;
+}
+.footer-link{
+	margin-left: 7px;
+	margin-top: 2px;
+}
+.footer-row{
+	border-top:groove;
+	padding-top: 20px;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; 
+  margin-left: -10px;
+  
+}
+.footer-text{
+	color: black;
 }
