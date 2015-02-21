@@ -51,6 +51,64 @@ function openModalFuzu () {
 
 
 
+var HTMLworkStart = '<div class="work-entry"></div>';
+var HTMLworkEmployer = '<a href="#">%data%';
+var HTMLworkTitle = ' - %data%</a>';
+var HTMLworkDates = '<div class="date-text">%data%</div>';
+var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkDescription = '<p><br>%data%</p>';
+
+var work = {
+   "jobs": [
+        {
+            "employer": "Firecon Group Oy",
+            "title": "Warehouse worker",
+            "location": "Lahti, Finland",
+            "dates": [
+                "05/2008-12/2008",
+                " 05/2010-08/2010",
+                " 12/2010-11/2011",
+                " 08/2011-08/2014"
+            ],
+            "description": "Warehouse work, pipes and valves prefabrication and pipe installations"
+        },
+        {
+            "employer": "Kustom promotion",
+            "title": "Project assistant",
+            "location": "Iso-syöte, Ruka",
+            "dates": "12/2013-04/2014",
+            "description": "Working at Kustom Promotion for 3 different snowboarding events: Ruka Snowboard World Cup 2013, Burton Rail Days, ISOPEN 2014. Tasks: cooking, building of track and many other small tasks."
+        },
+        {
+            "employer": "Univeristy of Jyväskylä, Department of Mathematical Information Technology",
+            "title": "Student feedback collector",
+            "location" : "Jyväskylä",
+            "dates": "1/2011-12/2011",
+            "description": "Collecting, analyzing course feedback at Department of Mathematical Information Technology and improwing the feedback collection process"
+        }
+    ]
+}
+
+function displayWork () {
+    for(job in work.jobs){
+    	$('#workExperience').append(HTMLworkStart);
+        var formattedEmployer = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
+        var formattedWorkTitle = HTMLworkTitle.replace('%data%', work.jobs[job].title);
+        var formattedEmployerTitle = formattedEmployer + formattedWorkTitle;
+        $('.work-entry:last').append(formattedEmployerTitle);
+
+        var formattedLocation = HTMLworkLocation.replace('%data%', work.jobs[job].location);
+        $('.work-entry:last').append(formattedLocation);
+
+        var formattedDays = HTMLworkDates.replace('%data%', work.jobs[job].dates);
+        $('.work-entry:last').append(formattedDays);
+
+        var formattedDescription = HTMLworkDescription.replace('%data%', work.jobs[job].description);
+        $('.work-entry:last').append(formattedDescription);
+
+    }
+}
+
 
 
 

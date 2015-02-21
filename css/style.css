@@ -15,7 +15,7 @@ html{
 #contact-information{
 	font-family: 'Francois One', sans-serif;
 }
-#project-header{
+.section-header{
 	font-family: 'Black Ops One', cursive;
 }
 .project {
@@ -33,7 +33,7 @@ html{
 .margin-left{
 	margin-left: 14px;
 	/*background-color: #d9edf7;*/
-	background-image: url(../images/mountain.png);
+	/*background-image: url(../images/mountain.png);*/
 }
 .project-big{
 	margin-bottom: 20px;
@@ -62,4 +62,7 @@ html{
 }
 .font-facebook{
 	color: #0066FF;
+}
+#workExperience{
+	background-color: #FFFF99;
 }
