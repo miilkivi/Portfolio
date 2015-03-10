@@ -106,8 +106,11 @@ function displayWork () {
         var formattedDescription = HTMLworkDescription.replace('%data%', work.jobs[job].description);
         $('.work-entry:last').append(formattedDescription);
 
+        
     }
 }
+
+
 
 
 
