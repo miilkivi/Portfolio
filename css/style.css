@@ -1,5 +1,4 @@
 body{
-	/*background-image: url("mountain.JPG");*/
 	background-color: #5599D4;
 	margin: 10px;
 	margin-bottom: 60px;
@@ -33,8 +32,6 @@ html{
 }
 .margin-left{
 	margin-left: 14px;
-	/*background-color: #d9edf7;*/
-	/*background-image: url(../images/mountain.png);*/
 }
 .project-big{
 	margin-bottom: 20px;
@@ -66,8 +63,20 @@ html{
 }
 #workExperience{
 	/*background-color: #FFFF99;*/
-	background-image: url(../images/pipe.JPG);
+	background-image: url(../images/kustom.PNG);
 	background-size: 100% 100%;
 	border-radius: 25px;
 	background-repeat: no-repeat;
+	min-height: 500px;
 }
+.black-text{
+	color: black;
+}
+.work-header{
+	font-family: 'Fontdiner Swanky', cursive;
+}
+.work-entry{
+	margin-bottom: 50px;
+}
+
+

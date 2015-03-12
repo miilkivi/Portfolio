@@ -89,26 +89,21 @@ var work = {
     ]
 }
 
-function displayWork () {
-    for(job in work.jobs){
-    	$('#workExperience').append(HTMLworkStart);
-        var formattedEmployer = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
-        var formattedWorkTitle = HTMLworkTitle.replace('%data%', work.jobs[job].title);
-        var formattedEmployerTitle = formattedEmployer + formattedWorkTitle;
-        $('.work-entry:last').append(formattedEmployerTitle);
 
-        var formattedLocation = HTMLworkLocation.replace('%data%', work.jobs[job].location);
-        $('.work-entry:last').append(formattedLocation);
-
-        var formattedDays = HTMLworkDates.replace('%data%', work.jobs[job].dates);
-        $('.work-entry:last').append(formattedDays);
-
-        var formattedDescription = HTMLworkDescription.replace('%data%', work.jobs[job].description);
-        $('.work-entry:last').append(formattedDescription);
-
-        
-    }
+function change_background (company_name) {
+    var background_imageURL = "url(../portfolio/images/" + company_name + ".PNG)";
+    $('#workExperience').css("background-image", background_imageURL);
 }
+
+$(document).ready(function() {
+    pic = new Image();
+    pic1 = new Image();
+    pic2 = new Image();
+    pic.src="../portfolio/images/firecon.PNG";
+    pic1.src="../portfolio/images/kustom.PNG";
+    pic2.src="../portfolio/images/jyu.PNG";
+
+});   
 
 
 
